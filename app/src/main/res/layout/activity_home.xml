@@ -14,7 +14,10 @@
         app:layout_constraintStart_toEndOf="@id/iv_home_menu"
         app:layout_constraintTop_toTopOf="parent"
         android:text=""/>
-
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        />-->
     <ImageView
         android:id="@+id/iv_home_menu"
         android:layout_width="40dp"
@@ -51,7 +54,7 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/iv_home_search"
+                android:id="@+id/but_home_search"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +70,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/iv_home_search"
+                app:layout_constraintEnd_toStartOf="@+id/but_home_search"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:text="Search for Locations"
@@ -76,6 +79,72 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="376dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_home_Hotels"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="20dp"
+            android:padding="15dp"
+            android:backgroundTint="#40737A"
+            >
+            <ImageView
+                android:id="@+id/iv_home_hotel"
+                android:clickable="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hotel"/>
+        </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_home_Travel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="20dp"
+            android:padding="15dp"
+            android:backgroundTint="#FAC31E"
+            >
+            <ImageView
+                android:id="@+id/iv_home_travel"
+                android:clickable="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/travel"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_home_Food"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            android:padding="15dp"
+            android:backgroundTint="#96ACED"
+            >
+            <ImageView
+                android:id="@+id/iv_home_food"
+                android:clickable="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/restaurant"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
