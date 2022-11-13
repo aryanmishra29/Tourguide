@@ -2,7 +2,10 @@ package com.example.tourguide;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -28,10 +31,12 @@ public class Home_Activity extends AppCompatActivity {
         ivclick_hotel = findViewById(R.id.iv_home_hotel);
         ivclick_travel = findViewById(R.id.iv_home_travel);
 
+
         String name="";
         //get the name from firebase(login)
-        tv_welcome.setText("Welcome, "+name);
+       // tv_welcome.setText("Welcome, "+name);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
     }
 }
