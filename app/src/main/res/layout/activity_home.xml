@@ -38,7 +38,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"/>
 
-    //cardview for search bar
+
     <androidx.cardview.widget.CardView
         android:layout_width="370dp"
         android:layout_height="50dp"
@@ -120,6 +120,7 @@
             <ImageView
                 android:id="@+id/iv_home_travel"
                 android:clickable="true"
+                android:focusable="true"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
